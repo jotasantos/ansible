@@ -1,0 +1,14 @@
+---
+- name: "Assign dhcp params"
+  hosts: "management"
+  connection: network_cli
+  gather_facts: false
+  tasks:
+     - name: Change hostname
+       ios_config:
+          lines:
+          - ntp server 4.4.4.4
+     - name: save running to startup when modified
+       ios_config:
+         save_when: modified
+
