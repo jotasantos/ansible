@@ -1,13 +1,23 @@
 ---
-- name: "Assign dhcp params"
+- name: "Manage DHCP in the mgmt router"
   hosts: "management"
   connection: network_cli
   gather_facts: false
   tasks:
-     - name: Change hostname
+     - name: "TASK 1: Apply the dhcp configuration 1"
        ios_config:
-          lines:
-          - ntp server 4.4.4.4
+         parents: "ip dhcp pool 0"
+         lines:
+           - network 10.8.11.0 /24
+           - domain-name cisco.com
+           - dns-server 8.8.8.8
+       register: "dhcp_updates"
+     
+     - name: "TASK 2: Print changes if they happen"
+       debug:
+         var: "dhcp_updates.updates"
+       when: "dhcp_updates.updates is defined"
+
      - name: save running to startup when modified
        ios_config:
          save_when: modified
