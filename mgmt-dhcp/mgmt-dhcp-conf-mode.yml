@@ -4,16 +4,34 @@
   connection: network_cli
   gather_facts: false
   tasks:
-     - name: "TASK 1: Apply the dhcp configuration 1"
+     - name: "TASK 1: Apply the dhcp configuration for CSR"
        ios_config:
-         parents: "ip dhcp pool 0"
+         parents: "ip dhcp pool CSR1"
          lines:
-           - network 10.8.11.0 /24
+           - host 10.8.11.169
+           - client-identifier 0150.0000.0600.01
+           - default-router 10.8.11.1
            - domain-name cisco.com
            - dns-server 8.8.8.8
        register: "dhcp_updates"
      
-     - name: "TASK 2: Print changes if they happen"
+     - name: "TASK 3: Print changes if they happen"
+       debug:
+         var: "dhcp_updates.updates"
+       when: "dhcp_updates.updates is defined"
+
+     - name: "TASK 3: Apply the dhcp configuration for CSR2"
+       ios_config:
+         parents: "ip dhcp pool CSR2"
+         lines:
+           - host 10.8.11.170
+           - client-identifier 0150.0000.0701.01
+           - default-router 10.8.11.1 
+           - domain-name cisco.com
+           - dns-server 8.8.8.8
+       register: "dhcp_updates"
+    
+     - name: "TASK 4: Print changes if they happen"
        debug:
          var: "dhcp_updates.updates"
        when: "dhcp_updates.updates is defined"
