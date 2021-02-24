@@ -14,7 +14,7 @@
            - domain-name cisco.com
            - dns-server 8.8.8.8
        register: "dhcp_updates"
-     
+  
      - name: "TASK 3: Print changes if they happen"
        debug:
          var: "dhcp_updates.updates"
