@@ -1,9 +1,9 @@
 reservations:
-  - name: CSR1
+  - name: csr1.eveng.com
     ip: 10.8.11.21
     mac: 5000.0006.0001
 
-  - name: CSR2
+  - name: csr2.eveng.com
     ip: 10.8.11.22
     mac: 5000.0007.0001
 

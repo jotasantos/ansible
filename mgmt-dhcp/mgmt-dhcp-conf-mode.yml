@@ -8,10 +8,10 @@
        ios_config:
          parents: "ip dhcp pool CSR1"
          lines:
-           - host 10.8.11.169
+           - host 10.8.11.169 /24
            - client-identifier 0150.0000.0600.01
            - default-router 10.8.11.1
-           - domain-name cisco.com
+           - domain-name eveng.com
            - dns-server 8.8.8.8
        register: "dhcp_updates"
   
@@ -24,10 +24,10 @@
        ios_config:
          parents: "ip dhcp pool CSR2"
          lines:
-           - host 10.8.11.170
+           - host 10.8.11.170 /24
            - client-identifier 0150.0000.0701.01
            - default-router 10.8.11.1 
-           - domain-name cisco.com
+           - domain-name eveng.com
            - dns-server 8.8.8.8
        register: "dhcp_updates"
     
