@@ -25,7 +25,7 @@ for i in range(len(res)):
 regex = re.compile("^192\.168\.222\.\d{1,3}$")
 res_list_ips = [i for i in res_list_ips if not regex.match(i)]
 
-regex = re.compile("^10\.8\.11\.\.1$")
+regex = re.compile("^10\.8\.11\.1$")
 res_list_ips = [i for i in res_list_ips if not regex.match(i)]
 
 
