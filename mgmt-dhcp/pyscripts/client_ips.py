@@ -14,8 +14,11 @@ device.open()
 
 
 res=device.get_arp_table()
-for i in range(len(res)):
-	print(res[i]['ip'])
-#pp(device.get_arp_table())
 
+res_list_ips = []
+for i in range(len(res)):
+	res_list_ips.append(res[i]['ip'])
+	
+#pp(device.get_arp_table())
+print ("The list of results :  "+ str(res_list_ips))
 device.close()
