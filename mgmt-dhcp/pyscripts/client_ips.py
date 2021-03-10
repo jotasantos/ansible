@@ -26,10 +26,10 @@ regex2 = re.compile("^10\.8\.11\.1$")
 res_list_ips = [i for i in res_list_ips if not (regex1.match(i) or regex2.match(i))]
 
 for i in range(len(res_list_ips)):
-    	device1 = driver(res_list_ips[i], 'ansible', 'ansible')
-		device1.open()
-    	pp(device1.get_facts())
-		device1.close()
+    device1 = driver(res_list_ips[i], 'ansible', 'ansible')
+	device1.open()
+    pp(device1.get_facts())
+	device1.close()
     	
 
  
