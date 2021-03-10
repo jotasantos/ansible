@@ -15,7 +15,6 @@ device.open()
 
 res=device.get_arp_table()
 #pp(device.get_arp_table())
-
 # Extracts the ips from the arp table
 res_list_ips = []
 for i in range(len(res)):
@@ -26,7 +25,12 @@ regex1 = re.compile("^192\.168\.222\.\d{1,3}$")
 regex2 = re.compile("^10\.8\.11\.1$")
 res_list_ips = [i for i in res_list_ips if not (regex1.match(i) or regex2.match(i))]
 
-print(res_list_ips)
+for i in range(len(res_list_ips)):
+    	device1 = driver(res_list_ips[i], 'ansible', 'ansible')
+		device1.open()
+    	pp(device1.get_facts())
+		device1.close()
+    	
 
  
 
