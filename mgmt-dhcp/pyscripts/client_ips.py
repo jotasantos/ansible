@@ -22,11 +22,9 @@ for i in range(len(res)):
 	res_list_ips.append(res[i]['ip'])
 
 # remove from the list the gateway and 192.x addresses from the list
-regex = re.compile("^192\.168\.222\.\d{1,3}$")
-res_list_ips = [i for i in res_list_ips if not regex.match(i)]
-regex = re.compile("^10\.8\.11\.1$")
-res_list_ips = [i for i in res_list_ips if not regex.match(i)]
-
+regex1 = re.compile("^192\.168\.222\.\d{1,3}$")
+regex2 = re.compile("^10\.8\.11\.1$")
+res_list_ips = [i for i in res_list_ips if not (regex1.match(i) or regex2.match(i))]
 
 print(res_list_ips)
 
