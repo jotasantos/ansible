@@ -29,7 +29,7 @@ hosts_result = {}
 for i in range(len(res_list_ips)):
 	device1 = driver(res_list_ips[i], 'ansible', 'ansible')
 	device1.open()
-	hosts_result[res_list_ips[i]] = device1.get_facts()['fqdn']+res_list_ips
+	hosts_result[res_list_ips[i]] = device1.get_facts()['fqdn']
 	#print(device1.get_facts()['fqdn']+res_list_ips[i])
 	device1.close()
 
