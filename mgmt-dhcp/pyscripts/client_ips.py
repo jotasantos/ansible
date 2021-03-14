@@ -35,22 +35,3 @@ for i in range(len(res_list_ips)):
  
 
 device.close()
-
-conf t
-username ansible privilege 15 password 0 ansible
-line vty 0 8
- exec-timeout 720 0
- password ansible
- login local
- transport input ssh
- exit
-
-
-crypto key generate rsa modulus 1024
- exit
- wr 
- !
-conf 
-ip ssh version 2
-ip ssh time-out 120
-ip ssh authentication-retries 3
