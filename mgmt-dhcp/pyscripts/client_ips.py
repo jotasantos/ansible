@@ -28,7 +28,7 @@ res_list_ips = [i for i in res_list_ips if not (regex1.match(i) or regex2.match(
 for i in range(len(res_list_ips)):
 	device1 = driver(res_list_ips[i], 'ansible', 'ansible')
 	device1.open()
-	pp(device1.get_facts())
+	print(device1.get_facts()['fqdn'])
 	device1.close()
     	
 
