@@ -25,13 +25,12 @@ regex1 = re.compile("^192\.168\.222\.\d{1,3}$")
 regex2 = re.compile("^10\.8\.11\.1$")
 res_list_ips = [i for i in res_list_ips if not (regex1.match(i) or regex2.match(i))]
 
+hosts_result = {}
 for i in range(len(res_list_ips)):
 	device1 = driver(res_list_ips[i], 'ansible', 'ansible')
 	device1.open()
-	print(device1.get_facts()['fqdn']+res_list_ips[i])
+	hosts_result[res_list_ips[i]] = device1.get_facts()['fqdn']+res_list_ips
+	#print(device1.get_facts()['fqdn']+res_list_ips[i])
 	device1.close()
-    	
 
- 
-
-device.close()
+print (hosts_result)
