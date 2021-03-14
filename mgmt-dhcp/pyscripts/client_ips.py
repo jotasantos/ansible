@@ -25,7 +25,7 @@ regex1 = re.compile("^192\.168\.222\.\d{1,3}$")
 regex2 = re.compile("^10\.8\.11\.1$")
 res_list_ips = [i for i in res_list_ips if not (regex1.match(i) or regex2.match(i))]
 
-filel='/etc/mockup' 
+filel='/etc/hosts' 
 hosts_result = {}
 fileh = open(filel, 'w')
 fileh.write('127.0.0.1	localhost\n127.0.1.1	ubuntu1804-pfne\nff02::1 ip6-allnodes\nff02::2 ip6-allrouters\n')
