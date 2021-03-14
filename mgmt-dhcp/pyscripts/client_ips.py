@@ -34,6 +34,6 @@ for i in range(len(res_list_ips)):
 	device1.open()
 	#hosts_result[res_list_ips[i]] = device1.get_facts()['fqdn']
 	#print(device1.get_facts()['fqdn']+res_list_ips[i])
-	fileh.write(device1.get_facts()['fqdn'] + " " + res_list_ips[i])
+	fileh.write(device1.get_facts()['fqdn'] + " " + res_list_ips[i]+'\n')
 	device1.close()
 fileh.close()
