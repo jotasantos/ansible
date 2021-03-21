@@ -24,9 +24,9 @@ def arp_to_list():
 return res_list_ips
 
 def arp_to_host_file(arp_list):
-    filel = '/etc/hosts' 
+    #filel = '/etc/hosts' 
 	hosts_result = {}
-	fileh = open(filel, 'w')
+	fileh = open("/etc/hosts", 'w')
 	fileh.write('127.0.0.1	localhost\n127.0.1.1	ubuntu1804-pfne\nff02::1 ip6-allnodes\nff02::2 	ip6-allrouters\n')
 	for i in range(len(arp_list)):
 		device1 = driver(arp_list[i], 'ansible', 'ansible')
@@ -36,8 +36,6 @@ def arp_to_host_file(arp_list):
 		fileh.write(arp_list[i] + " " + device1.get_facts()['fqdn'] + '\n')
 		device1.close()
 	fileh.close()
-
-
 
 if __name__ == '__main__':
     arp_list = arp_to_list()
