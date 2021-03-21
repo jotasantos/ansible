@@ -25,7 +25,7 @@ def arp_to_list():
 
 def arp_to_host_file(arp_list):
     filel='/etc/hosts' 
-	hosts_result = {}
+	#hosts_result = {}
 	fileh = open(filel, 'w')
 	fileh.write('127.0.0.1	localhost\n127.0.1.1	ubuntu1804-pfne\nff02::1 ip6-allnodes\nff02::2 	ip6-allrouters\n')
 	for i in range(len(arp_list)):
