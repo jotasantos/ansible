@@ -1,7 +1,6 @@
 #!/usr/bin/env python3.6
 from netmiko import ConnectHandler
 from napalm import get_network_driver
-from pprint import pprint as pp
 import re
 
 MGMT_ROUTER_IP="192.168.222.2"

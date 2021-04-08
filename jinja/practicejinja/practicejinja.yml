@@ -1,0 +1,9 @@
+---
+- name: "SYS >> Write network CLI output to disk"
+  hosts: all
+  tasks:
+    - name: "Task 1"
+      template:
+        src: "./commands.j2"
+        dest: "./res.txt"
+      delegate_to: localhost
