@@ -1,0 +1,4 @@
+{% for s in interfaces %}
+interface {{ s.name }}
+  ospfv3 1 ipv6 area {{ s.area }}	
+{% endfor %}

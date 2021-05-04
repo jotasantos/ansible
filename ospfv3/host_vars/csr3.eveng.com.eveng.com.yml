@@ -1,0 +1,6 @@
+---
+interfaces:
+  - name: GigabitEthernet4
+    area: "2" 
+
+...
