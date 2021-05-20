@@ -5,10 +5,13 @@
 #   tasks:
 #   - template: src="template_spine.j2" dest=result_spine.txt
 
-- name: "Load a configuration from a Jinja2 template and commit"
-  juniper.device.config:
-    load: "merge"
-    template: "template_spine.j2"
-    format: "text"
+- name: "Load and commit configuration"
+  hosts: "Spines"
+  tasks:
+    - name: "Load a configuration from a Jinja2 template and commit"
+      juniper.device.config:
+        load: "merge"
+        template: "template_spine.j2"
+        format: "text"
 
 
