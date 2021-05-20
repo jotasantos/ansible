@@ -1,0 +1,3 @@
+{% for intf in interfaces %}
+set interfaces {{intf.name}} family inet address {{intf.ip}}
+{% endfor %}

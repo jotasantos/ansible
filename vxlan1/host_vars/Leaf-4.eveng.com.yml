@@ -1,0 +1,12 @@
+---
+interfaces:
+  - name: GigabitEthernet1
+    area: "0"
+  - name: GigabitEthernet3
+    area: "0" 
+  - name: GigabitEthernet4
+    area: "2" 
+  - name: GigabitEthernet5
+    area: "0"
+
+...
