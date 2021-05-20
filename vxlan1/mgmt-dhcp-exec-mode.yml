@@ -1,0 +1,14 @@
+---
+- name: "Assign dhcp params"
+  hosts: "management"
+  connection: network_cli
+  gather_facts: false
+  tasks:
+     - name: Change hostname
+       ios_command:
+          commands:
+             - show ip interface brief
+       become_method: enable
+       become: yes
+
+
