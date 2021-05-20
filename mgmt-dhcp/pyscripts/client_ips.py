@@ -20,8 +20,8 @@ def arp_to_list():
 		res_list_ips.append(res[i]['ip'])
 	# remove from the list the gateway and 192.x addresses from the list
 	res_list_ips = [i for i in res_list_ips if not (regex1.match(i) or regex2.match(i))]
+	print(res_list_ips) 
 	return res_list_ips
-
 def arp_to_host_file(arp_list):
     #filel = '/etc/hosts' 
 	hosts_result = {}
