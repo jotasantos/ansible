@@ -7,11 +7,14 @@
 
 - name: "Load and commit configuration"
   hosts: "Spines"
+  vars:
+#    ansible_python_interpreter: "/usr/bin/env python"
   tasks:
     - name: "Load a configuration from a Jinja2 template and commit"
       juniper.device.config:
         load: "merge"
         template: "template_spine.j2"
         format: "text"
+  
 
 
