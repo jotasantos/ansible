@@ -1,0 +1,20 @@
+---
+- name: "Manage OSPF routers"
+  hosts: "routers"
+  tasks:
+    - name: "Make sure ospf-ipv4 is disabled"
+      ios_config:
+        src: "templates/ospfv3_disable_ipv4.j2"
+
+  tasks:
+    - name: "Enable ospf_v3_ipv4 in interfaces"
+      ios_config:
+        src: "templates/ospfv3_enable_ipv6.j2"
+      notify: "ipv6_enabled"
+      register: "ospfv3_updates"
+  handlers:
+    - name: "Print changes since ipv6 was enabled"
+      listen: "ipv6_enabled"
+      debug:
+        var: "ospfv3_updates.updates"
+...

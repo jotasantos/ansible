@@ -1,0 +1,4 @@
+set protocols lldp interface all
+set interfaces lo0.0 family inet address 172.16.100.1/32
+set interfaces xe-0/0/0.0 family inet address 172.16.7.101/24
+set interfaces xe-0/0/1.0 family inet address 172.16.6.101/24

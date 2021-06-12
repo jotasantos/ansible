@@ -1,0 +1,5 @@
+delete interfaces lo0
+delete interfaces xe-0/0/1
+delete interfaces xe-0/0/3
+delete interfaces xe-0/0/5
+delete interfaces xe-0/0/7
