@@ -1,6 +1,17 @@
-interface GigabitEthernet0/0
-  description IP addr = 172.16.0.1/24
-  ip address 172.16.0.1 255.255.255.0
-interface GigabitEthernet0/1
-  description IP addr = 172.16.1.1/24
-  ip address 172.16.1.1 255.255.255.0
+interface Loopback0
+ ip address 172.17.0.1 255.255.255.0
+ ipv6 router isis area1
+ !
+interface GigabitEthernet3
+ ip address 172.16.0.1 255.255.255.0
+ ipv6 router isis area1
+ !
+interface GigabitEthernet4
+ ip address 172.16.0.3 255.255.255.0
+ ipv6 router isis area1
+ !
+router isis area1
+    net 49.0001.1720.1700.0001.00
+ is-type level-2-only
+ metric-style wide transition
+ log-adjacency-changes

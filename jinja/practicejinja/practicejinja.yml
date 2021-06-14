@@ -8,3 +8,4 @@
   - "{{template}}.yml"
   tasks:
   - template: src="{{template}}.j2" dest=results.txt
+  
