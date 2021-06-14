@@ -1,8 +1,0 @@
----
-interfaces:
-  Loopback0        : "172.17.0.1 255.255.255.255"
-  GigabitEthernet2 : "172.16.0.1 255.255.255.0"
-  GigabitEthernet3 : "172.16.0.3 255.255.255.0"
-isis :
-  area: area1
-
