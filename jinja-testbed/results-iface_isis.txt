@@ -11,7 +11,7 @@ interface GigabitEthernet4
  ipv6 router isis area1
  !
 router isis area1
-    net 49.0001.1720.1700.0001.00
+ net 49.0001.1720.1700.0001.00
  is-type level-2-only
  metric-style wide transition
  log-adjacency-changes

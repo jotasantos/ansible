@@ -6,9 +6,14 @@ This directory contains:
 
 ## Features
 * `iface_isis.j2`   - Jinja2 template parsing ip into ios format as well as adding is-is configuration.
-* `ansible.cfg`     - Ansible configuration file (sets connection and NAPALM plugin directory)
-* `3-router.virl`   - 
-* `setup.sh` - sets environment variables to select Ansible inventory and configuration files.
+* `ansible.cfg`     - Ansible configuration file 
+* `iface_isis.yml`  - Variables file with cidr and isis information for a single, test, device.
+* `results.txt`     - The result ios configuration from parsing the j2 file.
+
+
+## Usage
+We parse the template with the following command. Note the ``template`` variable is required so vars_filem src and dst for the templating is determined:
+```ansible-playbook test-jinja.yml --extra-vars template="iface_isis"```
 
 ## ToDo
 

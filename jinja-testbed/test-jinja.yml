@@ -7,5 +7,5 @@
   vars_files:
   - "{{template}}.yml"
   tasks:
-  - template: src="{{template}}.j2" dest=results.txt
+  - template: src="{{template}}.j2" dest=results-{{template}}.txt
   

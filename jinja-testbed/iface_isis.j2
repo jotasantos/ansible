@@ -11,9 +11,9 @@ interface {{int.name}}
 
 {% if isis is defined -%} 
 router isis {{isis.area}}
- {% set str1 = interfaces[0].ip | ipaddr('address') %}
- {% set str2 = str1.split('.') %}
- {% set octect3 = str2[3].zfill(3) %}
+ {% set str1 = interfaces[0].ip | ipaddr('address') -%}
+ {% set str2 = str1.split('.') -%}
+ {% set octect3 = str2[3].zfill(3) -%}
  net 49.0001.1720.1700.0{{octect3}}.00
  is-type level-2-only
  metric-style wide transition
