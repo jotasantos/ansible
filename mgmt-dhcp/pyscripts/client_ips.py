@@ -38,16 +38,16 @@ def arp_to_host_file(arp_list):
 			device_ios = driver_ios(arp_list[i], 'ansible', 'ansible')
 			device_ios.open()
 			fileh.write(arp_list[i] + " " + device_ios.get_facts()['fqdn'] + '\n')
+			device_ios.close()
 		except NetMikoAuthenticationException:
 			print('IOS wrong OS or not responding')
-			device_ios.close()
 		try:
 			device_junos = driver_junos(arp_list[i], 'ansible', 'ansible')
 			device_junos.open()
+			fileh.write(arp_list[i] + " " + device_junos.get_facts()['fqdn'] + '\n')
+			device_junos.close()
 		except NetMikoAuthenticationException:
 			print('Junos wrong OS or not responding')
-			device_junos.close()
-			fileh.write(arp_list[i] + " " + device_junos.get_facts()['fqdn'] + '\n')
 	fileh.close()
 
 if __name__ == '__main__':
