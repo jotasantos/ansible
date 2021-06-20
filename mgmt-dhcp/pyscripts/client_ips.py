@@ -44,7 +44,7 @@ def arp_to_host_file(arp_list):
 			print(f'IOS wrong OS or not responding for {ip}')
 		try:
 			ip = arp_list[i]
-			device_junos = driver_junos(ip, 'ansible', 'ansible')
+			device_junos = driver_junos(ip, 'ansible', 'Ansible')
 			device_junos.open()
 			fileh.write(ip + " " + device_junos.get_facts()['fqdn'] + '\n')
 			device_junos.close()
