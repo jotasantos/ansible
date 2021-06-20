@@ -8,20 +8,23 @@ USER="ansible"
 PASSWORD="ansible"
 regex1 = re.compile("^192\.168\.222\.\d{1,3}$")
 regex2 = re.compile("^10\.8\.11\.1$")
-get_network_driver('ios')
+#get_network_driver('ios')
 driver = get_network_driver('ios')
-device = driver('192.168.222.2', 'ansible', 'ansible')
-device.open()
+device_mgmt_rt = driver('192.168.222.2', 'ansible', 'ansible')
+device_mgmt_rt.open()
 
 def arp_to_list():
-	res=device.get_arp_table()
+	res=device_mgmt_rt.get_arp_table()
 	res_list_ips = []
 	for i in range(len(res)):
 		res_list_ips.append(res[i]['ip'])
 	# remove from the list the gateway and 192.x addresses from the list
 	res_list_ips = [i for i in res_list_ips if not (regex1.match(i) or regex2.match(i))]
-	print(res_list_ips) 
+	device_mgmt_rt.close()
+	print(res_list_ips)
 	return res_list_ips
+
+
 def arp_to_host_file(arp_list):
     #filel = '/etc/hosts' 
 	hosts_result = {}
