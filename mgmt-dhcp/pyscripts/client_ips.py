@@ -35,7 +35,7 @@ def arp_to_host_file(arp_list):
 	fileh.write('127.0.0.1	localhost\n127.0.1.1	ubuntu1804-pfne\nff02::1 ip6-allnodes\nff02::2 	ip6-allrouters\n')
 	for i in range(len(arp_list)):
 		try:
-			device_ios = driver_ios(arp_list[i], 'ansible', 'ansible')
+			device_ios = driver_ios(arp_list[i], 'jaime', 'jaime')
 			device_ios.open()
 			fileh.write(arp_list[i] + " " + device_ios.get_facts()['fqdn'] + '\n')
 			device_ios.close()
