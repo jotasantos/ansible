@@ -1,9 +1,8 @@
 #!/usr/bin/env python3.6
 from netmiko import ConnectHandler
-from netmiko import NetMikoTimeoutException
-from netmiko.ssh_exception import NetmikoAuthenticationException
-from netmiko.ssh_exception import NetmikoTimeoutException
-from netmiko.ssh_exception import SSHException
+from netmiko import NetMikoAuthenticationException
+from netmiko import NetmikoTimeoutException
+from netmiko import SSHException
 from napalm import get_network_driver
 import re
 
