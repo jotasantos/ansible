@@ -2,7 +2,6 @@
 from netmiko import ConnectHandler
 from netmiko import NetMikoAuthenticationException
 from netmiko import NetmikoTimeoutException
-from netmiko import SSHException
 from napalm import get_network_driver
 import re
 
