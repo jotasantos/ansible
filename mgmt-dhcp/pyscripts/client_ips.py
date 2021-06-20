@@ -41,7 +41,7 @@ def arp_to_host_file(arp_list):
 			fileh.write(ip + " " + device_ios.get_facts()['fqdn'] + '\n')
 			device_ios.close()
 		except :
-			print(f'IOS wrong OS or not responding for {ip}')
+			print(f'Not responding as IOS for {ip}')
 		try:
 			ip = arp_list[i]
 			device_junos = driver_junos(ip, 'ansible', 'Ansible')
@@ -49,7 +49,7 @@ def arp_to_host_file(arp_list):
 			fileh.write(ip + " " + device_junos.get_facts()['fqdn'] + '\n')
 			device_junos.close()
 		except:
-			print('Junos and IOS wrong OS or not responding')
+			print(f'Not responding as JUNOS for {ip}')
 	fileh.close()
 
 if __name__ == '__main__':
