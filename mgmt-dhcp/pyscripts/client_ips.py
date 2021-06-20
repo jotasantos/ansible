@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.6
 from netmiko import ConnectHandler
+from netmiko import NetMikoTimeoutException
 from netmiko.ssh_exception import NetmikoAuthenticationException
 from netmiko.ssh_exception import NetmikoTimeoutException
 from netmiko.ssh_exception import SSHException
