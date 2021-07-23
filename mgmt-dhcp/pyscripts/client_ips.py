@@ -38,7 +38,7 @@ def arp_to_host_file(arp_list):
 			ip = arp_list[i]
 			device_ios = driver_ios(ip, 'ansible', 'ansible')
 			device_ios.open()
-			fileh.write(ip + " " + device_ios.get_facts()['fqdn'] + '\n')
+			fileh.write(ip + " " + device_ios.get_facts()['hostname'] + '\n')
 			device_ios.close()
 		except :
 			print(f'Not responding as IOS for {ip}')
