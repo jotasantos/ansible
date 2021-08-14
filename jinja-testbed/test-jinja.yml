@@ -1,5 +1,5 @@
 ---
-# Usage example: ansible-playbook practicejinja.yml --extra-vars template="1-ipaddr"
+# Usage example: ansible-playbook test-jinja.yml --extra-vars template="1-ipaddr"
 - name: practice_jinja2!
   hosts: localhost
   gather_facts: no
