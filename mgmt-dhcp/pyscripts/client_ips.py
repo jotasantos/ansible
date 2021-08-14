@@ -53,7 +53,7 @@ def arp_to_host_file(arp_list):
 			print(f'Not responding as JUNOS for {ip}')
 		try:
 			ip = arp_list[i]
-			device_nxos = driver_nxos(ip, 'ansible', 'Ansible')
+			device_nxos = driver_nxos(ip, 'admin', 'admin')
 			device_nxos.open()
 			fileh.write(ip + " " + device_nxos.get_facts()['fqdn'] + '\n')
 			device_nxos.close()
