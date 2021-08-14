@@ -13,6 +13,7 @@ regex2 = re.compile("^10\.8\.11\.1$")
 #get_network_driver('ios')
 driver_ios = get_network_driver('ios')
 driver_junos = get_network_driver('junos')
+driver_nxos = get_network_driver('nxos')
 device_mgmt_rt = driver_ios('192.168.222.2', 'ansible', 'ansible')
 device_mgmt_rt.open()
 
@@ -50,6 +51,14 @@ def arp_to_host_file(arp_list):
 			device_junos.close()
 		except:
 			print(f'Not responding as JUNOS for {ip}')
+		try:
+			ip = arp_list[i]
+			device_nxos = driver_nxos(ip, 'ansible', 'Ansible')
+			device_nxos.open()
+			fileh.write(ip + " " + device_nxos.get_facts()['fqdn'] + '\n')
+			device_nxos.close()
+		except:
+			print(f'Not responding as NXOS for {ip}')
 	fileh.close()
 
 if __name__ == '__main__':
