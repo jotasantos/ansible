@@ -1,0 +1,14 @@
+---
+- name: Access to json file parts. Source file is in this same dir
+  hosts: localhost
+  vars:
+    input: "{{ lookup('file','testfile.json') | from_json }}"
+
+# https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html#with-items
+  tasks:
+    - name: show elements with loop
+      debug:
+        msg: "{{ item.key }}  >> {{item.value.description}}  {{item.value.macaddress}}"
+#     when: item.key == 'Vlan761'
+      when: item.key is search("Vlan")
+      loop: "{{ lookup('dict', input.msg) }}"

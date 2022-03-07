@@ -1,0 +1,40 @@
+{
+    "msg": {
+        "Ethernet1/1": {
+            "bandwidth": 100000000000,
+            "description": "M=1,T=L2-L2,DD=LDZSFCML51-NEW,DI=Et1,FN=MEMBER OF PO1",
+            "duplex": "duplexFull",
+            "ipv4": {},
+            "lineprotocol": "up",
+            "macaddress": "d4:af:f7:78:17:16",
+            "mtu": 10178,
+            "operstatus": "connected",
+            "type": "dataLink"
+        },
+        "Ethernet10/1": {
+            "bandwidth": 25000000000,
+            "description": "DD=LDZLS24P,DI=prd2",
+            "duplex": "duplexFull",
+            "ipv4": {},
+            "lineprotocol": "down",
+            "macaddress": "d4:af:f7:78:17:3a",
+            "mtu": 10178,
+            "operstatus": "notconnect",
+            "type": "bridged"
+        },
+        "Vlan761": {
+            "bandwidth": 0,
+            "description": "UAT-ANYCAST",
+            "ipv4": {
+                "address": "10.0.55.60",
+                "masklen": 26
+            },
+            "lineprotocol": "up",
+            "macaddress": "d4:af:f7:78:17:15",
+            "mtu": 1500,
+            "operstatus": "connected",
+            "type": "routed"
+        }
+    }
+}
+
