@@ -1,0 +1,15 @@
+---
+- name:  Test ansible py module
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  become: False
+  tasks:
+    - name: Test ansible py module
+      script_eos:
+      register: result
+      delegate_to: localhost
+
+    - name: Print it
+      debug: var=result
+
