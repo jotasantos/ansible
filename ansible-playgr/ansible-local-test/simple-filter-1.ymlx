@@ -1,0 +1,13 @@
+---
+- name:  Local filtering testing
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: Store name
+      set_fact:
+        co: "Globomantics"
+
+    - name: "Print upper"
+      debug:
+        msg: "{{ co | upper }}"
