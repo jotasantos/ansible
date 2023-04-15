@@ -1,0 +1,2 @@
+# This is the command to use
+# mtr -rw -bc 3 151.101.128.81 > mtr-report-result

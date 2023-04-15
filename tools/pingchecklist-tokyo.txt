@@ -1,0 +1,2 @@
+host1.tokyodomain.com
+host2.tokyodomain.com
