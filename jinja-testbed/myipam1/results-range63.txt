@@ -1,0 +1,481 @@
+
+Device name is: ura-1
+Loopback IP: 10.63.0.192/32
+
+Link 1     : 10.63.0.0/31
+PE1-IP     : 10.63.0.0/31
+Device-IP1 : 10.63.0.1/31
+
+Link 2     : 10.63.0.2/31
+PE2-IP     : 10.63.0.2/31
+Device-IP2 : 10.63.0.3/31
+--
+
+Device name is: ura-2
+Loopback IP: 10.63.0.193/32
+
+Link 1     : 10.63.0.4/31
+PE1-IP     : 10.63.0.4/31
+Device-IP1 : 10.63.0.5/31
+
+Link 2     : 10.63.0.6/31
+PE2-IP     : 10.63.0.6/31
+Device-IP2 : 10.63.0.7/31
+--
+
+Device name is: ura-3
+Loopback IP: 10.63.0.194/32
+
+Link 1     : 10.63.0.8/31
+PE1-IP     : 10.63.0.8/31
+Device-IP1 : 10.63.0.9/31
+
+Link 2     : 10.63.0.10/31
+PE2-IP     : 10.63.0.10/31
+Device-IP2 : 10.63.0.11/31
+--
+
+Device name is: ura-4
+Loopback IP: 10.63.0.195/32
+
+Link 1     : 10.63.0.12/31
+PE1-IP     : 10.63.0.12/31
+Device-IP1 : 10.63.0.13/31
+
+Link 2     : 10.63.0.14/31
+PE2-IP     : 10.63.0.14/31
+Device-IP2 : 10.63.0.15/31
+--
+
+Device name is: ura-5
+Loopback IP: 10.63.0.196/32
+
+Link 1     : 10.63.0.16/31
+PE1-IP     : 10.63.0.16/31
+Device-IP1 : 10.63.0.17/31
+
+Link 2     : 10.63.0.18/31
+PE2-IP     : 10.63.0.18/31
+Device-IP2 : 10.63.0.19/31
+--
+
+Device name is: ura-6
+Loopback IP: 10.63.0.197/32
+
+Link 1     : 10.63.0.20/31
+PE1-IP     : 10.63.0.20/31
+Device-IP1 : 10.63.0.21/31
+
+Link 2     : 10.63.0.22/31
+PE2-IP     : 10.63.0.22/31
+Device-IP2 : 10.63.0.23/31
+--
+
+Device name is: ura-7
+Loopback IP: 10.63.0.198/32
+
+Link 1     : 10.63.0.24/31
+PE1-IP     : 10.63.0.24/31
+Device-IP1 : 10.63.0.25/31
+
+Link 2     : 10.63.0.26/31
+PE2-IP     : 10.63.0.26/31
+Device-IP2 : 10.63.0.27/31
+--
+
+Device name is: ums-8
+Loopback IP: 10.63.0.199/32
+
+Link 1     : 10.63.0.28/31
+PE1-IP     : 10.63.0.28/31
+Device-IP1 : 10.63.0.29/31
+
+Link 2     : 10.63.0.30/31
+PE2-IP     : 10.63.0.30/31
+Device-IP2 : 10.63.0.31/31
+--
+
+Device name is: ums-9
+Loopback IP: 10.63.0.200/32
+
+Link 1     : 10.63.0.32/31
+PE1-IP     : 10.63.0.32/31
+Device-IP1 : 10.63.0.33/31
+
+Link 2     : 10.63.0.34/31
+PE2-IP     : 10.63.0.34/31
+Device-IP2 : 10.63.0.35/31
+--
+
+Device name is: ums-10
+Loopback IP: 10.63.0.201/32
+
+Link 1     : 10.63.0.36/31
+PE1-IP     : 10.63.0.36/31
+Device-IP1 : 10.63.0.37/31
+
+Link 2     : 10.63.0.38/31
+PE2-IP     : 10.63.0.38/31
+Device-IP2 : 10.63.0.39/31
+--
+
+Device name is: ums-11
+Loopback IP: 10.63.0.202/32
+
+Link 1     : 10.63.0.40/31
+PE1-IP     : 10.63.0.40/31
+Device-IP1 : 10.63.0.41/31
+
+Link 2     : 10.63.0.42/31
+PE2-IP     : 10.63.0.42/31
+Device-IP2 : 10.63.0.43/31
+--
+
+Device name is: ums-12
+Loopback IP: 10.63.0.203/32
+
+Link 1     : 10.63.0.44/31
+PE1-IP     : 10.63.0.44/31
+Device-IP1 : 10.63.0.45/31
+
+Link 2     : 10.63.0.46/31
+PE2-IP     : 10.63.0.46/31
+Device-IP2 : 10.63.0.47/31
+--
+
+Device name is: ums-13
+Loopback IP: 10.63.0.204/32
+
+Link 1     : 10.63.0.48/31
+PE1-IP     : 10.63.0.48/31
+Device-IP1 : 10.63.0.49/31
+
+Link 2     : 10.63.0.50/31
+PE2-IP     : 10.63.0.50/31
+Device-IP2 : 10.63.0.51/31
+--
+
+Device name is: ums-14
+Loopback IP: 10.63.0.205/32
+
+Link 1     : 10.63.0.52/31
+PE1-IP     : 10.63.0.52/31
+Device-IP1 : 10.63.0.53/31
+
+Link 2     : 10.63.0.54/31
+PE2-IP     : 10.63.0.54/31
+Device-IP2 : 10.63.0.55/31
+--
+
+Device name is: sums-15
+Loopback IP: 10.63.0.206/32
+
+Link 1     : 10.63.0.56/31
+PE1-IP     : 10.63.0.56/31
+Device-IP1 : 10.63.0.57/31
+
+Link 2     : 10.63.0.58/31
+PE2-IP     : 10.63.0.58/31
+Device-IP2 : 10.63.0.59/31
+--
+
+Device name is: sums-16
+Loopback IP: 10.63.0.207/32
+
+Link 1     : 10.63.0.60/31
+PE1-IP     : 10.63.0.60/31
+Device-IP1 : 10.63.0.61/31
+
+Link 2     : 10.63.0.62/31
+PE2-IP     : 10.63.0.62/31
+Device-IP2 : 10.63.0.63/31
+--
+
+Device name is: sums-17
+Loopback IP: 10.63.0.208/32
+
+Link 1     : 10.63.0.64/31
+PE1-IP     : 10.63.0.64/31
+Device-IP1 : 10.63.0.65/31
+
+Link 2     : 10.63.0.66/31
+PE2-IP     : 10.63.0.66/31
+Device-IP2 : 10.63.0.67/31
+--
+
+Device name is: sums-18
+Loopback IP: 10.63.0.209/32
+
+Link 1     : 10.63.0.68/31
+PE1-IP     : 10.63.0.68/31
+Device-IP1 : 10.63.0.69/31
+
+Link 2     : 10.63.0.70/31
+PE2-IP     : 10.63.0.70/31
+Device-IP2 : 10.63.0.71/31
+--
+
+Device name is: sums-19
+Loopback IP: 10.63.0.210/32
+
+Link 1     : 10.63.0.72/31
+PE1-IP     : 10.63.0.72/31
+Device-IP1 : 10.63.0.73/31
+
+Link 2     : 10.63.0.74/31
+PE2-IP     : 10.63.0.74/31
+Device-IP2 : 10.63.0.75/31
+--
+
+Device name is: sums-20
+Loopback IP: 10.63.0.211/32
+
+Link 1     : 10.63.0.76/31
+PE1-IP     : 10.63.0.76/31
+Device-IP1 : 10.63.0.77/31
+
+Link 2     : 10.63.0.78/31
+PE2-IP     : 10.63.0.78/31
+Device-IP2 : 10.63.0.79/31
+--
+
+Device name is: sums-21
+Loopback IP: 10.63.0.212/32
+
+Link 1     : 10.63.0.80/31
+PE1-IP     : 10.63.0.80/31
+Device-IP1 : 10.63.0.81/31
+
+Link 2     : 10.63.0.82/31
+PE2-IP     : 10.63.0.82/31
+Device-IP2 : 10.63.0.83/31
+--
+
+Device name is: sums-22
+Loopback IP: 10.63.0.213/32
+
+Link 1     : 10.63.0.84/31
+PE1-IP     : 10.63.0.84/31
+Device-IP1 : 10.63.0.85/31
+
+Link 2     : 10.63.0.86/31
+PE2-IP     : 10.63.0.86/31
+Device-IP2 : 10.63.0.87/31
+--
+
+Device name is: sums-23
+Loopback IP: 10.63.0.214/32
+
+Link 1     : 10.63.0.88/31
+PE1-IP     : 10.63.0.88/31
+Device-IP1 : 10.63.0.89/31
+
+Link 2     : 10.63.0.90/31
+PE2-IP     : 10.63.0.90/31
+Device-IP2 : 10.63.0.91/31
+--
+
+Device name is: sums-24
+Loopback IP: 10.63.0.215/32
+
+Link 1     : 10.63.0.92/31
+PE1-IP     : 10.63.0.92/31
+Device-IP1 : 10.63.0.93/31
+
+Link 2     : 10.63.0.94/31
+PE2-IP     : 10.63.0.94/31
+Device-IP2 : 10.63.0.95/31
+--
+
+Device name is: sums-25
+Loopback IP: 10.63.0.216/32
+
+Link 1     : 10.63.0.96/31
+PE1-IP     : 10.63.0.96/31
+Device-IP1 : 10.63.0.97/31
+
+Link 2     : 10.63.0.98/31
+PE2-IP     : 10.63.0.98/31
+Device-IP2 : 10.63.0.99/31
+--
+
+Device name is: sums-26
+Loopback IP: 10.63.0.217/32
+
+Link 1     : 10.63.0.100/31
+PE1-IP     : 10.63.0.100/31
+Device-IP1 : 10.63.0.101/31
+
+Link 2     : 10.63.0.102/31
+PE2-IP     : 10.63.0.102/31
+Device-IP2 : 10.63.0.103/31
+--
+
+Device name is: sums-27
+Loopback IP: 10.63.0.218/32
+
+Link 1     : 10.63.0.104/31
+PE1-IP     : 10.63.0.104/31
+Device-IP1 : 10.63.0.105/31
+
+Link 2     : 10.63.0.106/31
+PE2-IP     : 10.63.0.106/31
+Device-IP2 : 10.63.0.107/31
+--
+
+Device name is: sums-28
+Loopback IP: 10.63.0.219/32
+
+Link 1     : 10.63.0.108/31
+PE1-IP     : 10.63.0.108/31
+Device-IP1 : 10.63.0.109/31
+
+Link 2     : 10.63.0.110/31
+PE2-IP     : 10.63.0.110/31
+Device-IP2 : 10.63.0.111/31
+--
+
+Device name is: sums-29
+Loopback IP: 10.63.0.220/32
+
+Link 1     : 10.63.0.112/31
+PE1-IP     : 10.63.0.112/31
+Device-IP1 : 10.63.0.113/31
+
+Link 2     : 10.63.0.114/31
+PE2-IP     : 10.63.0.114/31
+Device-IP2 : 10.63.0.115/31
+--
+
+Device name is: sums-30
+Loopback IP: 10.63.0.221/32
+
+Link 1     : 10.63.0.116/31
+PE1-IP     : 10.63.0.116/31
+Device-IP1 : 10.63.0.117/31
+
+Link 2     : 10.63.0.118/31
+PE2-IP     : 10.63.0.118/31
+Device-IP2 : 10.63.0.119/31
+--
+
+Device name is: sums-31
+Loopback IP: 10.63.0.222/32
+
+Link 1     : 10.63.0.120/31
+PE1-IP     : 10.63.0.120/31
+Device-IP1 : 10.63.0.121/31
+
+Link 2     : 10.63.0.122/31
+PE2-IP     : 10.63.0.122/31
+Device-IP2 : 10.63.0.123/31
+--
+
+Device name is: sums-32
+Loopback IP: 10.63.0.223/32
+
+Link 1     : 10.63.0.124/31
+PE1-IP     : 10.63.0.124/31
+Device-IP1 : 10.63.0.125/31
+
+Link 2     : 10.63.0.126/31
+PE2-IP     : 10.63.0.126/31
+Device-IP2 : 10.63.0.127/31
+--
+
+Device name is: sums-33
+Loopback IP: 10.63.0.224/32
+
+Link 1     : 10.63.0.128/31
+PE1-IP     : 10.63.0.128/31
+Device-IP1 : 10.63.0.129/31
+
+Link 2     : 10.63.0.130/31
+PE2-IP     : 10.63.0.130/31
+Device-IP2 : 10.63.0.131/31
+--
+
+Device name is: sums-34
+Loopback IP: 10.63.0.225/32
+
+Link 1     : 10.63.0.132/31
+PE1-IP     : 10.63.0.132/31
+Device-IP1 : 10.63.0.133/31
+
+Link 2     : 10.63.0.134/31
+PE2-IP     : 10.63.0.134/31
+Device-IP2 : 10.63.0.135/31
+--
+
+Device name is: sums-35
+Loopback IP: 10.63.0.226/32
+
+Link 1     : 10.63.0.136/31
+PE1-IP     : 10.63.0.136/31
+Device-IP1 : 10.63.0.137/31
+
+Link 2     : 10.63.0.138/31
+PE2-IP     : 10.63.0.138/31
+Device-IP2 : 10.63.0.139/31
+--
+
+Device name is: sums-36
+Loopback IP: 10.63.0.227/32
+
+Link 1     : 10.63.0.140/31
+PE1-IP     : 10.63.0.140/31
+Device-IP1 : 10.63.0.141/31
+
+Link 2     : 10.63.0.142/31
+PE2-IP     : 10.63.0.142/31
+Device-IP2 : 10.63.0.143/31
+--
+
+Device name is: sums-37
+Loopback IP: 10.63.0.228/32
+
+Link 1     : 10.63.0.144/31
+PE1-IP     : 10.63.0.144/31
+Device-IP1 : 10.63.0.145/31
+
+Link 2     : 10.63.0.146/31
+PE2-IP     : 10.63.0.146/31
+Device-IP2 : 10.63.0.147/31
+--
+
+Device name is: sums-38
+Loopback IP: 10.63.0.229/32
+
+Link 1     : 10.63.0.148/31
+PE1-IP     : 10.63.0.148/31
+Device-IP1 : 10.63.0.149/31
+
+Link 2     : 10.63.0.150/31
+PE2-IP     : 10.63.0.150/31
+Device-IP2 : 10.63.0.151/31
+--
+
+Device name is: sums-39
+Loopback IP: 10.63.0.230/32
+
+Link 1     : 10.63.0.152/31
+PE1-IP     : 10.63.0.152/31
+Device-IP1 : 10.63.0.153/31
+
+Link 2     : 10.63.0.154/31
+PE2-IP     : 10.63.0.154/31
+Device-IP2 : 10.63.0.155/31
+--
+
+Device name is: sums-40
+Loopback IP: 10.63.0.231/32
+
+Link 1     : 10.63.0.156/31
+PE1-IP     : 10.63.0.156/31
+Device-IP1 : 10.63.0.157/31
+
+Link 2     : 10.63.0.158/31
+PE2-IP     : 10.63.0.158/31
+Device-IP2 : 10.63.0.159/31
+--
+

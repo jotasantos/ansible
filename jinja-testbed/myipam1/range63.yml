@@ -1,0 +1,8 @@
+---
+devices:
+  - name: ura
+    number: 7
+  - name: ums
+    number: 7
+  - name: sums
+    number: 26

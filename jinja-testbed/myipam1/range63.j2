@@ -1,0 +1,22 @@
+#jinja2: lstrip_blocks: "True"
+
+{% set ns = namespace(count = 0) %}
+{% for devname in devices %}
+{% for itema in range(devname.number) %}
+Device name is: {{devname.name}}-{{ ns.count + 1 }}
+Loopback IP: {{ subnet_lo | ipsubnet(32, ns.count )}}
+
+Link 1     : {% set var1 =  subnet_links | ipsubnet(31, (ns.count * 2)) %}
+{{ var1 }}
+PE1-IP     : {{ var1 | ipaddr('0') }}
+Device-IP1 : {{ var1 | ipaddr('1') }}
+
+Link 2     : {% set var2 = subnet_links | ipsubnet(31, ((ns.count * 2) + 1)) %}
+{{ var2 }}
+PE2-IP     : {{ var2 | ipaddr('0') }}
+Device-IP2 : {{ var2 | ipaddr('1') }}
+--
+
+{% set ns.count = ns.count + 1 %}
+{% endfor %}
+{% endfor %}

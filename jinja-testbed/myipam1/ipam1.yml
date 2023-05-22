@@ -1,0 +1,11 @@
+---
+# Usage example: ansible-playbook test-jinja.yml --extra-vars template="model"
+- name: practice_jinja2!
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  vars_files:
+  - "{{template}}.yml"
+  tasks:
+  - template: src="{{template}}.j2" dest=results-{{template}}.txt
+  
