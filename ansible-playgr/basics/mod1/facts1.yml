@@ -1,0 +1,15 @@
+---
+- name: select parts of facts
+  hosts: all
+# note, to access facts values, we remove the prepending 'ansible_' from the key
+# here good examples: https://stackoverflow.com/questions/73893186/ansible-fact-accessing-the-additional-facts
+  tasks:
+  - name: Show amount of mounts
+    debug:
+      msg:
+        - "{{ ansible_facts['all_ipv4_addresses'] }}"
+  # - name: Show IPs
+  #   debug:
+  #     msg:
+  #       - "{{ ansible_facts['ansible_all_ipv4_addresses'][0] }}"
+
