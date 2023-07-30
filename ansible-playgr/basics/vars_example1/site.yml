@@ -1,0 +1,11 @@
+# var files are 'declared' at the beginning. dot notation for 
+---
+- name: using a variables and var files
+  hosts: all
+  gather_facts: no
+  vars_files:
+    - variables/myvar3.yml
+  tasks:
+  - name: print vars - element n in each of the dicts
+    debug:
+      msg: "{{ hostvasrs }}"

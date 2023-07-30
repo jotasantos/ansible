@@ -1,8 +1,8 @@
 #jinja2: lstrip_blocks: "True"
 
 {% set ns = namespace(count = 0) %}
-{% for devname in devices %}
-{% for itema in range(devname.number) %}
+ {% for devname in devices %}
+  {% for itema in range(devname.number) %}
 Device name is: {{devname.name}}-{{ ns.count + 1 }}
 Loopback IP: {{ subnet_lo | ipsubnet(32, ns.count )}}
 
@@ -18,5 +18,5 @@ Device-IP2 : {{ var2 | ipaddr('1') }}
 --
 
 {% set ns.count = ns.count + 1 %}
-{% endfor %}
-{% endfor %}
+  {% endfor %}
+ {% endfor %}

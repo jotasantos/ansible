@@ -6,3 +6,6 @@ devices:
     number: 7
   - name: sums
     number: 26
+
+subnet_links: 10.63.0.0/24
+subnet_lo: 10.63.0.192/26

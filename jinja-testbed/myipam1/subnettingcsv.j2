@@ -1,0 +1,16 @@
+#jinja2: lstrip_blocks: "True"
+Device_Name,Loopback,Subnet_link1,Subnet_PE1-IP,Device_IP1,Subnet_link2,Subnet_PE2-IP,Device_IP2
+{% set ns = namespace(count = 0) %}
+{% for devname in devices %}
+{% set mydevice =  devname.name %}
+{% for itema in range(devname.number) %}
+{% set myloopback =  subnet_lo | ipsubnet(32, ns.count ) %}
+{% if subnet_lo %}
+{% set myloopback =  subnet_lo | ipsubnet(32, ns.count ) %}
+{% endif %}
+{% set var1 = subnet_links | ipsubnet(31, (ns.count * 2)) %}
+{% set var2 = subnet_links | ipsubnet(31, ((ns.count * 2) + 1)) %}
+{{mydevice}}-{{ns.count + 1}},{{ myloopback }},{{var1}},{{ var1 | ipaddr('0') }},{{ var1 | ipaddr('1') }},{{var2}},{{ var2 | ipaddr('0') }},{{ var2 | ipaddr('1') }}
+{% set ns.count = ns.count + 1 %}
+{% endfor %}
+{% endfor %}

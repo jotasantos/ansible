@@ -1,0 +1,11 @@
+---
+all:
+  children:
+    webservers:
+      hosts:
+        R1:
+        R2:
+    dbservers:
+      hosts:
+        R3:
+        R4:

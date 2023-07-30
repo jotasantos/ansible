@@ -1,0 +1,13 @@
+members:
+  jaime:
+    nationality: Dutch
+    car_user: True
+    age: 23
+  pedro:
+    nationality: Vasc
+    car_user: True
+    age: 65
+  loco:
+    nationality: Pasiego
+    car_user: False
+    age: 54

@@ -1,0 +1,9 @@
+# var files are 'declared' at the beginning. dot notation for 
+---
+- name: play
+  hosts: all
+  gather_facts: no
+  tasks:
+  - name: print vars - element n in each of the dicts
+    debug:
+      msg: "value 1: {{ web_package }}  {{ web_service }}"

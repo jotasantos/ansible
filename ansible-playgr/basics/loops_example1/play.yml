@@ -1,0 +1,15 @@
+# var files are 'declared' at the beginning. dot notation for 
+---
+- name: using a variables and var files
+  hosts: all
+  gather_facts: no
+  vars_files:
+    - variables/myvar1.yml
+  tasks:
+  - name: print vars - element n in each of the dicts
+    debug:
+      msg: "These are the cities: {{ item.city}}"
+    loop: "{{ sites }}"
+  - name: print vars - 2nd dictionary
+    debug:
+      msg: "These are the cities: {{ sites[1] }}"

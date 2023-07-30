@@ -1,0 +1,10 @@
+sites:
+  - city: Rio
+    provider: Equinix
+    redundant: True
+  - city: Rio
+    provider: Coresite
+    redundant: True
+  - city: Madrid
+    provider: Coresite
+    redundant: False
